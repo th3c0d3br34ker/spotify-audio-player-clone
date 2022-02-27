@@ -1,16 +1,29 @@
 {
-  "name": "test",
+  "name": "spotify-audio-player-clone",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p $PUBLIC_PORT",
+    "dev:codespaces": "export PUBLIC_PORT=1337 && yarn dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^12.0.7",
-    "react": "^18.0.0-rc.0",
-    "react-dom": "^18.0.0-rc.0"
+    "@reduxjs/toolkit": "^1.7.2",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-range": "^1.8.12",
+    "react-redux": "^7.2.6",
+    "react-use": "^17.3.2",
+    "redux": "^4.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.7",
+    "tailwindcss": "^3.0.23"
   }
 }

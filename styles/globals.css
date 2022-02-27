@@ -1,16 +1,19 @@
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-* {
-	box-sizing: border-box;
+@layer base {
+  .root {
+    @apply h-full bg-backdrop text-white antialiased;
+  }
+  .root {
+    @apply flex flex-col;
+  }
+  .wrapper {
+    height: calc(100% - theme("spacing.24"));
+    @apply flex;
+  }
+  .scrollable {
+    scroll-behavior: smooth;
+  }
 }

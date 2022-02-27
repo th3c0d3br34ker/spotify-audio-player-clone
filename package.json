@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p $PUBLIC_PORT",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^12.0.7",
+    "react": "^18.0.0-rc.0",
+    "react-dom": "^18.0.0-rc.0"
+  }
+}

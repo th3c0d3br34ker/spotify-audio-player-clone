@@ -6,6 +6,8 @@ module.exports = {
       "d34qmkt8w5wll9.cloudfront.net",
       "is3-ssl.mzstatic.com",
       "cdn.epidemicsound.com",
-      "i1.sndcdn.com"],
+      "i1.sndcdn.com",
+      "i.scdn.co"
+    ],
   },
 };

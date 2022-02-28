@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const user = {
   name: 'Jainam Desai',
-  avatar: 'https://i.scdn.co/image/ab6775700000ee856fca122911ed9eec4ce60c1e'
+  avatar: 'https://i.scdn.co/image/ab6775700000ee8576cc2050dc6876a8fe6f889f'
 }
 
 

@@ -4,6 +4,8 @@ function secondsToTime(seconds) {
     .substr(14, 5)
 }
 
-export {
-  secondsToTime
+function fetcher(...args) {
+  return fetch(...args).then((res) => res.json())
 }
+
+export { secondsToTime, fetcher }

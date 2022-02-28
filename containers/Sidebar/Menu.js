@@ -6,7 +6,7 @@ export default function Menu() {
     <nav className="px-2">
       <ul className="flex flex-col">
         <li>
-          <Link activeClassName="bg-active text-white" href="/">
+          <Link href="/">
             <a className="h-10 flex gap-x-4 items-center text-sm font-semibold text-link rounded hover:text-white px-4">
               <span>
                 <Icon name="home" />
@@ -16,7 +16,7 @@ export default function Menu() {
           </Link>
         </li>
         <li>
-          <Link activeClassName="bg-active text-white" href="/search">
+          <Link href="/search">
             <a className="h-10 flex gap-x-4 items-center text-sm font-semibold text-link rounded hover:text-white px-4">
               <span>
                 <Icon name="search" />
@@ -26,7 +26,7 @@ export default function Menu() {
           </Link>
         </li>
         <li>
-          <Link activeClassName="bg-active text-white" href="/collection">
+          <Link href="/playlists">
             <a className="h-10 flex gap-x-4 items-center text-sm font-semibold text-link rounded hover:text-white px-4">
               <span>
                 <Icon name="collection" />

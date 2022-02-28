@@ -1,5 +1,6 @@
 const playlists = [
   {
+    id: "oDoqhh",
     playlistName: "Electronic",
     createdBy: "Developer",
     numberOfSongs: 5,
@@ -7,11 +8,8 @@ const playlists = [
     image:
       "https://raw.githubusercontent.com/codedamn-projects/spotify-audio-player-clone/master/images/Electronic.jpg",
     songsArray: [
-      "PbM6xHE9aF",
-      "3SAs2YaWH6",
-      "Cax8ZhYuQ4",
-      "WSb7c0LQub",
-      "Zcd1HIcopz",
+      "0og9wKFGgFFNQnrBe7eisG",
+      "0EMYTe2oQy70PCKPQFlbVy",
     ],
   },
 ];

@@ -76,7 +76,7 @@ export default function FullScreenPlayer({ toggle, state, controls, volumeIcon }
             <Icon size={16} name={volumeIcon} />
           </button>
           <div className="w-[5.813rem] max-w-full">
-            <CustomRange
+            <PlayerRange
               step={0.01}
               min={0}
               max={1}

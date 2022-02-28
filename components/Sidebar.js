@@ -25,20 +25,24 @@ export default function Sidebar() {
       <nav className="mt-6">
         <ul>
           <li>
-            <a href="#" className="py-2 px-6 flex items-center group text-sm text-link font-semibold hover:text-white">
-              <span className="w-6 h-6 flex items-center justify-center mr-4 bg-white bg-opacity-60 group-hover:bg-opacity-100 rounded-sm text-black">
-                <Icon name="plus" size={12} />
-              </span>
-              Create Playlist
-            </a>
+            <Link href="/">
+              <a className="py-2 px-6 flex items-center group text-sm text-link font-semibold hover:text-white">
+                <span className="w-6 h-6 flex items-center justify-center mr-4 bg-white bg-opacity-60 group-hover:bg-opacity-100 rounded-sm text-black">
+                  <Icon name="plus" size={12} />
+                </span>
+                Create Playlist
+              </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="py-2 px-6 flex items-center group text-sm text-link font-semibold hover:text-white">
-              <span className="w-6 h-6 flex items-center justify-center mr-4 bg-gradient-to-br from-purple-700 text-white rounded-sm to-blue-300 opacity-70 group-hover:opacity-100">
-                <Icon name="heartFilled" size={12} />
-              </span>
-              Liked Songs
-            </a>
+            <Link href="/">
+              <a className="py-2 px-6 flex items-center group text-sm text-link font-semibold hover:text-white">
+                <span className="w-6 h-6 flex items-center justify-center mr-4 bg-gradient-to-br from-purple-700 text-white rounded-sm to-blue-300 opacity-70 group-hover:opacity-100">
+                  <Icon name="heartFilled" size={12} />
+                </span>
+                Liked Songs
+              </a>
+            </Link>
           </li>
         </ul>
       </nav>

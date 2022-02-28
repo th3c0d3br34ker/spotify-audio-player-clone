@@ -1,0 +1,63 @@
+import { Menu } from "@headlessui/react"
+
+import Icon from "containers/Icons"
+import Link from "next/link"
+
+const user = {
+  name: 'Jainam Desai',
+  avatar: 'https://i.scdn.co/image/ab6775700000ee856fca122911ed9eec4ce60c1e'
+}
+
+
+export default function UserAvatar() {
+  return (
+    <Menu as="nav" className={"relative"}>
+      {({ open }) => (
+        <>
+          <Menu.Button className={`flex items-center h-8 rounded-3xl pr-2 ${open ? 'bg-active' : 'bg-black'} hover:bg-active`}>
+            <img src={user.avatar} className={"w-8 h-8 rounded-full p-0.5 mr-2"} />
+            <span className="text-sm font-semibold mr-2">{user.name}</span>
+            <span className={open ? 'rotate-180' : undefined}>
+              <Icon size={16} name="downDir" />
+            </span>
+          </Menu.Button>
+          <Menu.Items className={"absolute p-1 top-full right-0 w-48 bg-active rounded translate-y-2"}>
+            <Menu.Item>
+              {({ active }) => (
+                <Link href=".">
+                  <a
+                    className={`h-10 flex justify-between items-center px-2 text-sm rounded ${active ? 'bg-white bg-opacity-10' : undefined}`}
+                  >
+                    Account
+                    <Icon size={16} name="external" />
+                  </a>
+                </Link>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <Link href=".">
+                  <a
+                    className={`h-10 flex items-center px-2 text-sm rounded ${active ? 'bg-white bg-opacity-10' : undefined}`}
+                  >
+                    Profile
+                  </a>
+                </Link>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <Link href=".">
+                  <a
+                    className={`h-10 flex items-center px-2 text-sm rounded ${active ? 'bg-white bg-opacity-10' : undefined}`}
+                  >
+                    Log out
+                  </a>
+                </Link>)}
+            </Menu.Item>
+          </Menu.Items>
+        </>
+      )}
+    </Menu>
+  )
+}

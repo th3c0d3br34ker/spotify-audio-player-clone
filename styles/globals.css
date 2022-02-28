@@ -10,7 +10,7 @@
     @apply flex flex-col;
   }
   .wrapper {
-    height: calc(100% - theme("spacing.24"));
+    height: calc(100vh - theme("spacing.24"));
     @apply flex;
   }
   .scrollable {

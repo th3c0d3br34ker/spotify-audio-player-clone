@@ -1,4 +1,4 @@
-import HomeSection from "components/Home";
+import HomeSection from "components/HomeSection";
 import Sidebar from "components/Sidebar";
 import Layout from "containers/Layout";
 

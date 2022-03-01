@@ -1,6 +1,7 @@
 import useSWR from 'swr'
 import { useRouter } from "next/router";
 
+import PlaylistSection from 'components/PlaylistSection';
 import Sidebar from 'components/Sidebar';
 import Layout from "containers/Layout";
 import { fetcher } from 'utils';
@@ -17,7 +18,7 @@ export default function PlayListPage({ playlist }) {
   return (
     <Layout title={data.playlistName}>
       <Sidebar />
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <PlaylistSection data={data} />
     </Layout>
   )
 }

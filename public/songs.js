@@ -2,7 +2,7 @@ const songs = [
   {
     id: "0og9wKFGgFFNQnrBe7eisG",
     name: "Uff Teri Adaa",
-    duration: 206,
+    duration: 304,
     artist: "Shankar Mahadevan",
     description: 'Original Soundtrack',
     type: 'album',
@@ -14,7 +14,7 @@ const songs = [
   {
     id: "0EMYTe2oQy70PCKPQFlbVy",
     name: "Voh Dekhnay Mein",
-    duration: "272",
+    duration: 272,
     artist: "Ali Zafar",
     description: 'Original Soundtrack',
     type: "album",

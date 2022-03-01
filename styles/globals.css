@@ -4,13 +4,13 @@
 
 @layer base {
   .root {
-    @apply h-full bg-backdrop text-white antialiased;
+    @apply h-full bg-backdrop text-white antialiased select-none;
   }
   .root {
     @apply flex flex-col;
   }
   .wrapper {
-    height: calc(100vh - theme("spacing.24"));
+    height: calc(100vh - theme('spacing.24'));
     @apply flex;
   }
   .scrollable {

@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Icon from "containers/Icons";
-import Menu from "containers/Sidebar/Menu";
-import Playlists from "containers/Sidebar/Playlists";
-import InstallApp from "containers/Sidebar/InstallApp";
+import Menu from "./Menu";
+import Playlists from "./Playlists";
+import InstallApp from "./InstallApp";
 
 export default function Sidebar() {
   return (

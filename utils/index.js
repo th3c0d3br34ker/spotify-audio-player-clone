@@ -1,4 +1,4 @@
-import { forHumans } from "./time"
+import { forHumans, formatTime } from "./time"
 
 function secondsToTime(seconds) {
   return new Date(1000 * seconds)
@@ -11,4 +11,4 @@ function fetcher(...args) {
 }
 
 
-export { secondsToTime, fetcher, forHumans }
+export { secondsToTime, fetcher, forHumans, formatTime }

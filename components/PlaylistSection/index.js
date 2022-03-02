@@ -1,6 +1,7 @@
 
 import Navbar from "containers/Navbar";
 import Hero from "./Hero";
+import SongTable from "./SongTable";
 
 
 export default function PlaylistSection({ data }) {
@@ -10,14 +11,8 @@ export default function PlaylistSection({ data }) {
       <Navbar />
 
       <div className="px-8 py-5">
-
         <Hero data={data} />
-
-        <section>
-          <div className="backdrop-blur-md bg-backdrop/30">
-            <pre>{JSON.stringify(data, null, 2)}</pre>
-          </div>
-        </section>
+        <SongTable data={data} />
       </div >
     </main >
   )

@@ -18,6 +18,7 @@ const songs = [
     artist: "Ali Zafar",
     description: 'Original Soundtrack',
     type: "album",
+    album: "London, Paris, New York",
     image: "https://i.scdn.co/image/ab67616d00001e02d9168a716dd978d5322f411a",
     src: "/audio/0EMYTe2oQy70PCKPQFlbVy.mp3"
   }

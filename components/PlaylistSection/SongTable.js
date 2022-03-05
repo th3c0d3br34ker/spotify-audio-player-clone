@@ -13,7 +13,7 @@ function SongListItem({ id, idx }) {
     <tr>
       <td className="py-4">{idx}</td>
       <td className="text-left py-4 flex">
-        <img src={data.image} width="50" className="h-12 w-12 mr-4 rounded-lg" />
+        <img src={data.image} className="h-12 w-12 mr-4 rounded-lg" />
         <span className="space-y-2 text-left">
           {data.name}
           <br />
@@ -28,7 +28,7 @@ function SongListItem({ id, idx }) {
 
 export default function SongTable({ data }) {
   return (
-    <section className="backdrop-blur-md bg-backdrop/30 mt-2 pb-8">
+    <section className="backdrop-blur-md bg-backdrop/30 mt-2 pb-8 rounded-lg">
       <div className="flex flex-row">
         <button className="bg-primary p-4 m-6 text-black rounded-full">
           <Icon name="play" />

@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import { forHumans } from "utils";
 
@@ -9,7 +8,7 @@ export default function Hero({ data }) {
     <section className="flex flex-row">
 
       <div className="rounded-lg">
-        <Image src={image} width="200" height="200" />
+        <img src={image} width="200" height="200" className="rounded-lg" />
       </div>
 
       <div className="flex flex-col m-8">

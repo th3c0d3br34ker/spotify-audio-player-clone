@@ -1,12 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 import Icon from "containers/Icons";
 import Menu from "./Menu";
 import Playlists from "./Playlists";
 import InstallApp from "./InstallApp";
+import SidebarCover from "./SideBarCover";
 
-export default function Sidebar() {
+export default function Sidebar({ isLoading }) {
+  const sidebar = useSelector(state => state.player.sidebar)
+
   return (
     <aside className="w-60 pt-6 flex flex-shrink-0 flex-col bg-black">
       <Link href="/">
@@ -51,7 +55,6 @@ export default function Sidebar() {
 
       <InstallApp />
 
-      {/* Add other components */}
-
+      {sidebar && <SidebarCover />}
     </aside>)
 }

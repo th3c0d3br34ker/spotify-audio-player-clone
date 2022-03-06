@@ -4,7 +4,8 @@ const initialState = {
   current: false,
   controls: false,
   playing: false,
-  sidebar: false
+  sidebar: false,
+  queue: false,
 }
 
 export const playerSlice = createSlice({
@@ -23,6 +24,9 @@ export const playerSlice = createSlice({
     setSidebar: (state, action) => {
       state.sidebar = action.payload
     },
+    setQueue: (state, action) => {
+      state.queue = action.payload
+    }
   },
 })
 
@@ -30,7 +34,8 @@ export const {
   setControls,
   setCurrent,
   setPlaying,
-  setSidebar
+  setSidebar,
+  setQueue
 } = playerSlice.actions
 
 export default playerSlice.reducer

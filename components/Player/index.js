@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/router";
 import { useAudio, useFullscreen, useToggle } from 'react-use';
 
 import { secondsToTime } from "utils";
@@ -10,8 +11,14 @@ import Icon from "containers/Icons";
 
 export default function Player() {
   const fsRef = useRef()
+  const router = useRouter()
   const [show, toggle] = useToggle(false);
-  const isFullscreen = useFullscreen(fsRef, show, { onClose: () => toggle(false) });
+  const isFullscreen = useFullscreen(
+    fsRef,
+    show,
+    {
+      onClose: () => toggle(false)
+    });
 
   const dispatch = useDispatch()
   const { current, sidebar } = useSelector(state => state.player)
@@ -31,7 +38,6 @@ export default function Player() {
   useEffect(() => {
     dispatch(setControls(controls))
   }, [])
-
 
   const volumeIcon = useMemo(() => {
     if (state.volume === 0 || state.muted)
@@ -76,6 +82,7 @@ export default function Player() {
             </div>
           )}
         </div>
+
         <div className="max-w-[45.125rem] w-[40%] pt-2 flex flex-col px-4 items-center">
           <div className="flex items-center gap-x-2">
             <button
@@ -123,7 +130,9 @@ export default function Player() {
             <Icon size={16} name="lyrics" />
           </button>
           <button
-            className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
+            className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100"
+            onClick={() => router.push("/queue")}
+          >
             <Icon size={16} name="queue" />
           </button>
           <button

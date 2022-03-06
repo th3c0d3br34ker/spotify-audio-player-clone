@@ -2,7 +2,7 @@ const songs = [
   {
     id: "0og9wKFGgFFNQnrBe7eisG",
     name: "Uff Teri Adaa",
-    duration: 304,
+    duration: 176,
     artist: "Shankar Mahadevan",
     description: 'Original Soundtrack',
     type: 'album',

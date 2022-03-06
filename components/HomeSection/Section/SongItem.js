@@ -41,18 +41,18 @@ export default function SongItem({ item }) {
       key={item.id}
       href="/"
     >
-      <a className={"bg-footer p-4 rounded hover:bg-active group"}>
+      <a className={"bg-footer p-4 rounded-lg hover:bg-active group"}>
         <div className="pt-[100%] relative mb-4">
           <div className={`absolute inset-0 object-cover w-full h-full ${imageStyle(item)}`}>
             <Image src={item.image} layout="fill" />
           </div>
           <button
             onClick={updateCurrent}
-            className={`w-10 h-10 rounded-full bg-primary absolute group-hover:flex group-focus:flex bottom-2 right-2 items-center justify-center ${!isCurrentItem ? 'hidden' : 'flex'}`}>
+            className={`w-10 h-10 rounded-full bg-primary absolute group-hover:flex group-focus:flex bottom-2 right-2 items-center justify-center ${isCurrentItem ? 'flex' : 'hidden'}`}>
             <Icon name={isCurrentItem ? 'pause' : 'play'} size={16} />
           </button>
         </div>
-        <h6 className="overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-semibold">
+        <h6 className={`overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-semibold ${isCurrentItem ? 'text-primary' : ''}`}>
           {item.name}
         </h6>
         <p className="line-clamp-2 text-link text-sm mt-1">

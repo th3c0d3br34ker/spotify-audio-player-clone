@@ -9,6 +9,8 @@ const playlists = [
     songsArray: [
       "0og9wKFGgFFNQnrBe7eisG",
       "0EMYTe2oQy70PCKPQFlbVy",
+      "0gWQyG8QoBmB3HmvGugBWH",
+      "5UHvVfewZKxwoB6gdhSFtr"
     ],
   },
 ];

@@ -40,7 +40,7 @@ function formatTime(seconds) {
       }
     }
 
-    let returntext = `${levels[0]}: ${levels[1]}`;
+    let returntext = `${levels[0]}:${levels[1]}`;
 
     return returntext.trim();
   }
